@@ -29,7 +29,7 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About Me</a>
@@ -49,6 +49,8 @@
         </div>
 
         <div class="nav__buttons">
+          <!-- theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
           <!-- toggle button -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
@@ -67,7 +69,7 @@
           <div class="home__perfil">
             <div class="home__image">
               <img
-                src="assets/img/home.jpg"
+                src="assets/img/home-3.jpg"
                 alt="home image"
                 class="home__img"
               />
@@ -115,8 +117,6 @@
               <img src="assets/img/about.jpg" alt="" class="about__img" />
 
               <div class="about__shadow"></div>
-
-              <div class="geometric-box"></div>
             </div>
           </div>
 
@@ -249,7 +249,7 @@
           <!-- project two -->
           <article class="projects__card">
             <div class="projects__image">
-              <img src="assets/img/project-2.jpg" alt="project image" />
+              <img src="assets/img/project-1.jpg" alt="project image" />
 
               <a href="#" class="projects__button button">
                 <i class="ri-arrow-right-up-line"></i>
@@ -278,7 +278,7 @@
           <!-- project three -->
           <article class="projects__card">
             <div class="projects__image">
-              <img src="assets/img/project-3.jpg" alt="project image" />
+              <img src="assets/img/project-1.jpg" alt="project image" />
 
               <a href="#" class="projects__button button">
                 <i class="ri-arrow-right-up-line"></i>
@@ -307,7 +307,7 @@
           <!-- project four -->
           <article class="projects__card">
             <div class="projects__image">
-              <img src="assets/img/project-4.jpg" alt="project image" />
+              <img src="assets/img/project-1.jpg" alt="project image" />
 
               <a href="#" class="projects__button button">
                 <i class="ri-arrow-right-up-line"></i>
@@ -336,7 +336,7 @@
           <!-- project five -->
           <article class="projects__card">
             <div class="projects__image">
-              <img src="assets/img/project-5.jpg" alt="project image" />
+              <img src="assets/img/project-1.jpg" alt="project image" />
 
               <a href="#" class="projects__button button">
                 <i class="ri-arrow-right-up-line"></i>
@@ -458,13 +458,38 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By <a href="#">elradad.</a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- scroll up -->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
 
     <!-- email js -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <!-- scroll reveal -->
+    <script src="assets/js/scrollreveal.min.js"></script>
     <!-- main file js -->
     <script src="assets/js/main.js"></script>
   </body>
