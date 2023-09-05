@@ -99,21 +99,3 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-/* scroll revel */
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 400,
-  // reset: true,
-});
-
-sr.reveal(`.home__perfil, .about__image ,.contact__email`, { origin: "right" });
-sr.reveal(
-  `.home__name, .home__info, .about__container, .section__title-2, .about__info, .contact__social ,.contact__data`,
-  {
-    origin: "left",
-  }
-);
-sr.reveal(`.services__card, .projects__card`, { interval: 100 });
